@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/GuidedLearning/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/GuidedLearning/Data/**" />
+		<Compile Remove="$(PkgPath)/GuidedLearning/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/GuidedLearning/Schemas\**" />
+		<Compile Remove="$(PkgPath)/GuidedLearning/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/GuidedLearning/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/GuidedLearning/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/GuidedLearning/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/GuidedLearning/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/GuidedLearning/Resources/**" />
+		<None Remove="$(PkgPath)/GuidedLearning/Assemblies/**" />
+		<None Remove="$(PkgPath)/GuidedLearning/Data/**" />
+		<None Remove="$(PkgPath)/GuidedLearning/SqlScripts/**" />
+		<None Remove="$(PkgPath)/GuidedLearning/Schemas/**" />
+		<None Remove="$(PkgPath)/GuidedLearning/Resources/**" />
+  </ItemGroup>
+</Project>
